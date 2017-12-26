@@ -39,12 +39,15 @@ public class AppbarLayoutActivity extends AppCompatActivity implements View.OnCl
     /*
         CollapsingToolbarLayout 可以通过app:contentScrim设置折叠时工具栏布局的颜色，用过app:statusBarScrim设置折叠时状态栏的颜色。
         默认contentScrim时colorPrimary的色值，statusBarScrim是colorPrimaryDark的色值。
+
         CollapsingToolbarLayout的子布局有3种折叠模式（Toolbar中设置的app:layout_collapseMode）：
         1.off：这是个默认属性，布局将正常显示，没有折叠的行为。
         2.pin：CollapsingToolbarLayout折叠后，此布局将固定在顶部。
         3.parallax：CollapsingToolbarLayout折叠后，此布局也会有视差折叠效果。
+     */
 
-        布局结构：
+    /*
+     布局结构：
         <AppBarLayout>
             <CollapsingToolbarLayout>
                 <ImageView app:layout_collapseMode="parallax"/>
@@ -54,7 +57,6 @@ public class AppbarLayoutActivity extends AppCompatActivity implements View.OnCl
             </CollapsingToolbarLayout>
         </AppBarLayout>
      */
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

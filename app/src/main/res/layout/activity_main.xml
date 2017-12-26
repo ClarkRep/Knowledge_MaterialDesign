@@ -28,6 +28,14 @@
             android:layout_marginTop="10dp"
             android:text="AppbarLayout" />
 
+        <Button
+            android:id="@+id/btn_simple_behavior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="SimpleBehavior" />
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

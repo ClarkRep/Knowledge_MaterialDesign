@@ -37,6 +37,9 @@
         <activity
             android:name=".appbarlayout.FlagSnapActivity"
             android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".coordinatorlayout.SimpleBehaviorActivity"
+            android:theme="@style/BaseAppTheme" />
     </application>
 
 </manifest>
