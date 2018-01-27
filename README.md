@@ -26,7 +26,7 @@ Material Design规范了Android的运动元素，让按钮的弹入弹出，卡�
 
 里面提供了一些搭配Material Design设计方案来使用的控件，我们可以打开一下扩展包来看看提供了哪些控件：
 
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/MaterialDesign.png)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/MaterialDesign.png?raw=true)
 
 可以看到design扩展包为我们提供了一些搭配Material Design模式使用的控件，当然这些控件也不是强制要求符合Material Design设计模式，也可根据特定的需求自己搭配，下面将会介绍这些控件的使用方式和效果。
 
@@ -41,11 +41,11 @@ Material Design规范了Android的运动元素，让按钮的弹入弹出，卡�
 这个控件非常强大，可以配合design扩展库的很多控件实现联动效果：比如配合AppbarLayout实现标题栏的收缩；配合SnackBar实现Snackbar的滚动消除；Snackbar和FloatingActionButton的联动效果；自定义behavior实现自定义的联动效果等等。
 * 来看一下顶级布局是FrameLayout的效果：
 
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/Snackbar1.gif)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/Snackbar1.gif?raw=true)
 
 * 再看看顶级布局是CoordinatorLayout的效果：
 
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/Snackbar2.gif)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/Snackbar2.gif?raw=true)
 
 ### 2.FloatingActionButton
 顾名思义，FloatingActionButton就是一个浮动的按钮，它是一个带有阴影效果的圆形按钮，下面介绍一下它的一些属性：
@@ -68,7 +68,7 @@ public static Snackbar make(@NonNull View view, @StringRes int resId, @Duration 
 通过它的生成方法，可以看到Snackbar的生成必须依赖一个View，这个View是该布局内的任何一个View，因为它会通过findSuitableParent(View view)方法来找到该界面的CoordinatorLayout，如果没有找到CoordinatorLayout，则会找到id为android.R.id.content（这个View也就是顶级DecorView -> LinearLayout -> content）。  
 Snackbar在界面上只能存在一个，如果出现新的Snackbar，则会将上一个Snackbar顶掉，不会同时存在两个或两个以上的Snackbar。
 
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/Snackbar3.gif)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/Snackbar3.gif?raw=true)
 
 Snackbar有个消失的回调监听Snackbar.Callback，在该监听的onDismissed( )方法中有个event参数，它对应Snackbar五种消失状态：
 ```
@@ -117,19 +117,19 @@ AppbarLayout提供了5种滚动标识给子View使用（子View使用app:layout_
 ```
 来看一下5中模式都有什么样的效果
 1. scroll  
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/AppBarLayout_scroll.gif)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/AppBarLayout_scroll.gif?raw=true)
 
 2. enterAlways  
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/AppBarLayout_enterAlways.gif)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/AppBarLayout_enterAlways.gif?raw=true)
 
 3. enterAlwaysCollapsed  
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/AppBarLayout_enterAlwaysCollapsed.gif)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/AppBarLayout_enterAlwaysCollapsed.gif?raw=true)
 
 4. exitUntilCollapsed  
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/AppBarLayout_exitUntilCollapsed.gif)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/AppBarLayout_exitUntilCollapsed.gif?raw=true)
 
 5. snap  
-![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/AppBarLayout_snap.gif)
+![](https://github.com/zdy793410600/Knowledge_MaterialDesign/blob/master/img/AppBarLayout_snap.gif?raw=true)
 
 通过以上的gif图可以看出来AppBarLayout的5模式态分别有对应的效果，所以你可以根据具体要实现什么样的效果选择对应的模式。
 
