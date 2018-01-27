@@ -1,7 +1,5 @@
 # Material Design
-@(Material Design)
 
-***
 ## 什么是Material Design?
 
 Android一开始充满着旧Google时代的风格：自由、放任。开发者可以任意上传自己的应用，而不必通过审核；开发者可以随意按照自己的想法设计应用，Google方面不予任何限制。可以说，Android一开始就是一片Google开辟的荒地，他允许每个人都可以随意使用，结果是所有人都各行其是，让这块荒地乱糟糟的。直到Android 4.0，从Palm跳槽到Google担任Android用户体验副总裁的马蒂亚斯·杜瓦迪（Matias Duarte）上任后，才真正提出设计指导。  
