@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -65,11 +64,10 @@ public class AppbarLayoutActivity extends AppCompatActivity implements View.OnCl
         setTitle("AppbarLayoutActivity");
 
         AppBarLayout appBarLayout = findViewById(R.id.appBarLayout);
-        CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.ctl);
-
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+
             }
         });
 

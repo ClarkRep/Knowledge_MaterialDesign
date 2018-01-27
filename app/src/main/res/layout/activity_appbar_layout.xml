@@ -28,8 +28,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/angel"
-                app:layout_collapseMode="parallax" />
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/angel" />
 
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
@@ -45,7 +45,8 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="我是CollapsingToolbarLayout的内容"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    app:layout_collapseMode="pin" />
 
             </android.support.v7.widget.Toolbar>
 
