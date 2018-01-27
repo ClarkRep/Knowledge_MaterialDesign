@@ -25,12 +25,12 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="20dp"
-                    android:text="我是CollapsingToolbarLayout的内容"
+                    android:text="Alpha更好更强大"
                     android:textColor="@android:color/white" />
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="150dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/angel" />
 
